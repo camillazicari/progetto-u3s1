@@ -1,8 +1,10 @@
 import { Component } from "react";
+import { Spinner } from "react-bootstrap";
 
 class Trending extends Component {
   state = {
     film: [],
+    isLoading: true,
   };
 
   getFilm = async () => {
@@ -14,6 +16,7 @@ class Trending extends Component {
         this.setState({ film: data.Search }, () => {
           console.log("ECCOLIIIII", this.state.film);
         });
+        this.setState({ isLoading: false });
       } else {
         throw new Error("errore nel recupero");
       }
@@ -29,6 +32,13 @@ class Trending extends Component {
     return (
       <div className='container-fluid mt-5 ms-1'>
         <h2 className='text-white'>{this.props.subtitle}</h2>
+        {this.state.isLoading && (
+          <Spinner
+            animation='border'
+            variant='danger'
+            className='text-center'
+          />
+        )}
         <div
           id={this.props.carouselId}
           className='carousel slide'
