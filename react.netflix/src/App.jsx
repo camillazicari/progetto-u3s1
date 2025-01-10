@@ -12,7 +12,22 @@ function App() {
   return (
     <>
       <MyNav />
-      <Trending gallery='https://www.omdbapi.com/?apikey=90053f83&s=harry' />
+      <Trending
+        carouselId='first'
+        subtitle='Trending Now'
+        gallery='https://www.omdbapi.com/?apikey=90053f83&s=harry'
+      />
+      <Trending
+        carouselId='second'
+        subtitle='Watch It Again'
+        gallery='https://www.omdbapi.com/?apikey=90053f83&s=avengers'
+      />
+      <Trending
+        carouselId='third'
+        subtitle='New Releases'
+        gallery='https://www.omdbapi.com/?apikey=90053f83&s=galaxy'
+      />
+
       <MyFooter />
     </>
   );

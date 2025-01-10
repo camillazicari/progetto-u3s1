@@ -28,9 +28,9 @@ class Trending extends Component {
   render() {
     return (
       <div className='container-fluid mt-5 ms-1'>
-        <h2 className='text-white'>Trending Now</h2>
+        <h2 className='text-white'>{this.props.subtitle}</h2>
         <div
-          id='carouselExampleInterval'
+          id={this.props.carouselId}
           className='carousel slide'
           data-bs-ride='carousel'
         >
@@ -97,7 +97,7 @@ class Trending extends Component {
           <button
             className='carousel-control-prev justify-content-start'
             type='button'
-            data-bs-target='#carouselExampleInterval'
+            data-bs-target={"#" + this.props.carouselId}
             data-bs-slide='prev'
           >
             <span
@@ -109,7 +109,7 @@ class Trending extends Component {
           <button
             className='carousel-control-next justify-content-end'
             type='button'
-            data-bs-target='#carouselExampleInterval'
+            data-bs-target={"#" + this.props.carouselId}
             data-bs-slide='next'
           >
             <span
