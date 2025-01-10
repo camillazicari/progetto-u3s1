@@ -1,42 +1,183 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.nav-link:hover,
+.nav-link:focus {
+  color: white;
+}
+
+.navbar-brand {
+  width: 7% !important;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-brand {
+    width: 9% !important;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.navbar-nav,
+footer {
+  font-size: 0.8rem;
+}
+
+.navEnd {
+  width: 15%;
+}
+
+i {
+  font-size: 0.8rem;
+}
+
+.size {
+  width: 7% !important;
+}
+
+@media screen and (min-width: 992px) {
+  .size {
+    width: 13% !important;
   }
 }
 
-.card {
-  padding: 2em;
+.dropdown-item img {
+  width: 10%;
 }
 
-.read-the-docs {
-  color: #888;
+.dropdown-menu {
+  width: 10% !important;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+select {
+  font-size: 0.7em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+footer,
+footer i,
+footer button {
+  color: #818181;
+}
+
+footer button {
+  border-color: #818181;
+}
+
+#copy {
+  font-size: 0.5rem;
+}
+
+#ratings {
+  background-color: #333333;
+  font-size: 0.8em !important;
+}
+
+label,
+.settings {
+  font-size: 0.8em;
+}
+
+.profileBtns:hover,
+.profileBtns:focus {
+  background-color: white !important;
+  color: black !important;
+}
+
+.logoP2 {
+  width: 180% !important;
+}
+
+.btnLink,
+.btnLink:visited {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.images img {
+  opacity: 70%;
+}
+
+.card-img:not(:hover) {
+  opacity: 50%;
+}
+
+.card-img:hover {
+  opacity: 100%;
+  transform: scaleX(1.05) scaleY(1.05);
+}
+
+@media screen and (max-width: 767px) {
+  #avatar {
+    width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #footer {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .position-absolute {
+    left: -3000px;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3%;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 20%;
+  }
+}
+
+#userName::placeholder {
+  color: white;
+}
+
+footer p {
+  cursor: pointer;
+}
+
+#Membership {
+  background-color: #d9d9d9;
+  font-size: small !important;
+}
+
+#paypal {
+  width: 20% !important;
+}
+
+@media screen and (max-width: 991px) {
+  #paypal {
+    width: 35% !important;
+  }
+}
+
+#avatarAccount {
+  width: 15% !important;
+}
+
+@media screen and (max-width: 767px) {
+  .bordi {
+    border-bottom: none !important;
+  }
 }
