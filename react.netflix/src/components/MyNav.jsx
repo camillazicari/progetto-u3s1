@@ -3,12 +3,12 @@ import { Component } from "react";
 class MyNav extends Component {
   render() {
     return (
-      <header>
-        <nav className='navbar navbar-expand-lg navbar-dark py-2 mx-4'>
+      <header className='container-fluid p-0 bg-black'>
+        <nav className='navbar navbar-expand-lg py-2 mx-4'>
           <div className='container-fluid p-0'>
             <a className='navbar-brand' href='#'>
               <img
-                src='./assets/img/netflix_logo.png'
+                src='public/img/netflix_logo.png'
                 alt='logo Netflix'
                 className='logoP2'
               />
@@ -30,27 +30,31 @@ class MyNav extends Component {
             >
               <ul className='navbar-nav ms-lg-5'>
                 <li className='nav-item'>
-                  <a className='nav-link' aria-current='page' href='#'>
+                  <a
+                    className='nav-link text-white'
+                    aria-current='page'
+                    href='#'
+                  >
                     Home
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>
+                  <a className='nav-link text-white' href='#'>
                     TV Shows
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>
+                  <a className='nav-link text-white' href='#'>
                     Movies
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>
+                  <a className='nav-link text-white' href='#'>
                     Recently Added
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>
+                  <a className='nav-link text-white' href='#'>
                     My List
                   </a>
                 </li>
@@ -62,13 +66,13 @@ class MyNav extends Component {
                   </button>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>
+                  <a className='nav-link text-white' href='#'>
                     KIDS
                   </a>
                 </li>
                 <li className='nav-item'>
                   <a className='nav-link' href='#'>
-                    <i className='bi bi-bell-fill'></i>
+                    <i className='bi bi-bell-fill text-white'></i>
                   </a>
                 </li>
                 <li className='nav-item size'>
@@ -81,7 +85,7 @@ class MyNav extends Component {
                   >
                     <img
                       className='w-100'
-                      src='assets/img/avatar.png'
+                      src='public/img/avatar.png'
                       alt='avatar Netflix'
                     />
                   </a>
@@ -89,11 +93,11 @@ class MyNav extends Component {
                     <li className='d-flex align-items-end'>
                       <img
                         className='w-25 ms-3'
-                        src='assets/img/avatar.png'
+                        src='public/img/avatar.png'
                         alt='avatar'
                       />
                       <a
-                        className='dropdown-item px-2'
+                        className='dropdown-item px-2 text-white'
                         href='#'
                         id='realUserName'
                       >
@@ -101,26 +105,26 @@ class MyNav extends Component {
                       </a>
                     </li>
                     <li>
-                      <a className='dropdown-item' href='#'>
+                      <a className='dropdown-item text-white' href='#'>
                         Manage Profiles
                       </a>
                     </li>
 
                     <li>
-                      <a className='dropdown-item' href='#'>
+                      <a className='dropdown-item text-white' href='#'>
                         Account
                       </a>
                     </li>
                     <li>
-                      <a className='dropdown-item' href='#'>
+                      <a className='dropdown-item text-white' href='#'>
                         Help Center
                       </a>
                     </li>
                     <li>
-                      <hr className='dropdown-divider' />
+                      <hr className='dropdown-divider text-white' />
                     </li>
                     <li>
-                      <a className='dropdown-item' href='#'>
+                      <a className='dropdown-item text-white' href='#'>
                         Signout Netflix
                       </a>
                     </li>
