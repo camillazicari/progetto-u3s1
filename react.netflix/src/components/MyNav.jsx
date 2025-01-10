@@ -4,7 +4,7 @@ class MyNav extends Component {
   render() {
     return (
       <header className='container-fluid p-0 bg-black'>
-        <nav className='navbar navbar-expand-lg py-2 mx-4'>
+        <nav className='navbar navbar-expand-lg py-2 mx-3'>
           <div className='container-fluid p-0'>
             <a className='navbar-brand' href='#'>
               <img
@@ -31,7 +31,7 @@ class MyNav extends Component {
               <ul className='navbar-nav ms-lg-5'>
                 <li className='nav-item'>
                   <a
-                    className='nav-link text-white'
+                    className='nav-link text-secondary'
                     aria-current='page'
                     href='#'
                   >
@@ -39,22 +39,22 @@ class MyNav extends Component {
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link text-white' href='#'>
+                  <a className='nav-link text-secondary' href='#'>
                     TV Shows
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link text-white' href='#'>
+                  <a className='nav-link text-secondary' href='#'>
                     Movies
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link text-white' href='#'>
+                  <a className='nav-link text-secondary' href='#'>
                     Recently Added
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link text-white' href='#'>
+                  <a className='nav-link text-secondary' href='#'>
                     My List
                   </a>
                 </li>
@@ -62,22 +62,22 @@ class MyNav extends Component {
               <ul className='navbar-nav align-items-lg-center justify-content-end position-relative'>
                 <li className='nav-item'>
                   <button className='btn p-0' type='button'>
-                    <i className='bi bi-search text-white'></i>
+                    <i className='bi bi-search text-secondary'></i>
                   </button>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link text-white' href='#'>
+                  <a className='nav-link text-secondary' href='#'>
                     KIDS
                   </a>
                 </li>
                 <li className='nav-item'>
                   <a className='nav-link' href='#'>
-                    <i className='bi bi-bell-fill text-white'></i>
+                    <i className='bi bi-bell-fill text-secondary'></i>
                   </a>
                 </li>
                 <li className='nav-item size'>
                   <a
-                    className='nav-link dropdown-toggle'
+                    className='nav-link dropdown-toggle text-secondary'
                     href='#'
                     role='button'
                     data-bs-toggle='dropdown'
@@ -134,6 +134,39 @@ class MyNav extends Component {
             </div>
           </div>
         </nav>
+
+        <div className='text-white mt-3 overflow-hidden'>
+          <div className='container-fluid text-white ms-3 pe-5 d-flex justify-content-between align-items-center'>
+            <div className='d-flex'>
+              <h1 className='me-4' id='tvShows'>
+                TV Shows
+              </h1>
+              <select
+                name='generi'
+                className='bg-black border border-white text-white p-1'
+              >
+                <option value='vario'>Genres</option>
+                <option value='romance'>Romance</option>
+                <option value='thriller'>Thriller</option>
+                <option value='horror'>Horror</option>
+              </select>
+            </div>
+            <div className='d-flex align-items-end'>
+              <button
+                type='button'
+                className='bg-black border border-white text-white py-1 px-3'
+              >
+                <i className='bi bi-text-left'></i>
+              </button>
+              <button
+                type='button'
+                className='bg-black border border-white text-white py-1 px-3'
+              >
+                <i className='bi bi-grid'></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </header>
     );
   }
