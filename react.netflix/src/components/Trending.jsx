@@ -1,10 +1,11 @@
 import { Component } from "react";
-import { Spinner } from "react-bootstrap";
+import { Spinner, Alert } from "react-bootstrap";
 
 class Trending extends Component {
   state = {
     film: [],
     isLoading: true,
+    isError: false,
   };
 
   getFilm = async () => {
@@ -22,6 +23,7 @@ class Trending extends Component {
       }
     } catch {
       console.log("ERRORE", Error);
+      this.setState({ isError: true, isLoading: false });
     }
   };
 
@@ -38,6 +40,13 @@ class Trending extends Component {
             variant='danger'
             className='text-center'
           />
+        )}
+        {this.state.isError && (
+          <Alert variant='danger' className='fs-5 text-center'>
+            <i class='bi bi-exclamation-triangle-fill fs-5'></i> Errore nel
+            recupero dei film{" "}
+            <i class='bi bi-exclamation-triangle-fill fs-5'></i>
+          </Alert>
         )}
         <div
           id={this.props.carouselId}

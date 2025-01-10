@@ -15,7 +15,7 @@ function App() {
       <Trending
         carouselId='first'
         subtitle='Trending Now'
-        gallery='https://www.omdbapi.com/?apikey=90053f83&s=harry'
+        gallery='https://www.omdbapi.com/?ap=90053f83&s=harry'
       />
       <Trending
         carouselId='second'
