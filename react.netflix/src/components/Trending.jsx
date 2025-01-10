@@ -37,106 +37,60 @@ class Trending extends Component {
           <div className='carousel-inner'>
             <div className='carousel-item active' data-bs-interval='5000'>
               <div className='row flex-column flex-md-row flex-nowrap'>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media0.webp'
-                    alt='sherlock'
-                  />
-                </div>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media1.jpg'
-                    alt='american factory'
-                  />
-                </div>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media2.webp'
-                    alt='genius of the modern world'
-                  />
-                </div>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media3.webp'
-                    alt='cuba and the cameraman'
-                  />
-                </div>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media4.jpg'
-                    alt='the social dilemma'
-                  />
-                </div>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media5.webp'
-                    alt='the social dilemma'
-                  />
-                </div>
+                {this.state.film.length > 6
+                  ? this.state.film.slice(0, 6).map((movie) => {
+                      return (
+                        <div key={movie.imbdID} className='col-8 col-md-2 g-1'>
+                          {" "}
+                          <img
+                            className='card-img'
+                            src={movie.Poster}
+                            alt='sherlock'
+                          />
+                        </div>
+                      );
+                    })
+                  : this.state.film.map((movie) => {
+                      return (
+                        <div key={movie.imbdID} className='col-8 col-md-2 g-1'>
+                          {" "}
+                          <img
+                            className='card-img'
+                            src={movie.Poster}
+                            alt='sherlock'
+                          />
+                        </div>
+                      );
+                    })}
               </div>
             </div>
             <div className='carousel-item' data-bs-interval='5000'>
               <div className='row flex-column flex-md-row flex-nowrap'>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media6.jpg'
-                    alt='sherlock'
-                  />
-                </div>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media7.webp'
-                    alt='american factory'
-                  />
-                </div>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media8.webp'
-                    alt='genius of the modern world'
-                  />
-                </div>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media9.jpg'
-                    alt='cuba and the cameraman'
-                  />
-                </div>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media10.jpg'
-                    alt='the social dilemma'
-                  />
-                </div>
-                <div className='col-8 col-md-2 g-1'>
-                  {" "}
-                  <img
-                    className='card-img'
-                    src='assets/img/media/media11.jpg'
-                    alt='the social dilemma'
-                  />
-                </div>
+                {this.state.film.length > 6
+                  ? this.state.film.slice(0, 6).map((movie) => {
+                      return (
+                        <div key={movie.imbdID} className='col-8 col-md-2 g-1'>
+                          {" "}
+                          <img
+                            className='card-img'
+                            src={movie.Poster}
+                            alt='sherlock'
+                          />
+                        </div>
+                      );
+                    })
+                  : this.state.film.map((movie) => {
+                      return (
+                        <div key={movie.imbdID} className='col-8 col-md-2 g-1'>
+                          {" "}
+                          <img
+                            className='card-img'
+                            src={movie.Poster}
+                            alt='sherlock'
+                          />
+                        </div>
+                      );
+                    })}
               </div>
             </div>
           </div>
