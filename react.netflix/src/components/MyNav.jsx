@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 class MyNav extends Component {
   render() {
@@ -6,13 +7,13 @@ class MyNav extends Component {
       <header className='container-fluid p-0 bg-black'>
         <nav className='navbar navbar-expand-lg py-2 mx-3'>
           <div className='container-fluid p-0'>
-            <a className='navbar-brand' href='#'>
+            <Link className='navbar-brand' to={"/trending"}>
               <img
                 src='public/img/netflix_logo.png'
                 alt='logo Netflix'
                 className='logoP2'
               />
-            </a>
+            </Link>
             <button
               className='navbar-toggler'
               type='button'
