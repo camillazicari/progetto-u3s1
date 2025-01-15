@@ -7,6 +7,8 @@ import MyFooter from "./components/MyFooter";
 import Trending from "./components/Trending";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NetflixHome from "./components/NetflixHome";
+import MovieDetails from "./components/MovieDetails";
+
 function App() {
   return (
     <BrowserRouter>
@@ -35,6 +37,7 @@ function App() {
             </>
           }
         />
+        <Route path='/movieDetails/:filmId' element={<MovieDetails />} />
       </Routes>
       <MyFooter />
     </BrowserRouter>
